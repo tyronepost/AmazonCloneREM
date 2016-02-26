@@ -12,7 +12,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Shop by Department <span class="caret"></span></a>
                     </li>
-                    <li><a href="#">Your AmazonClone.com</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Your AmazonClone.com</a></li>
                     <li><a href="#">Today's Deals</a></li>
                     <li><a href="#">Gift Cards</a></li>
                     <li><a href="#">Sell</a></li>
@@ -31,5 +31,27 @@
     </nav>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">Sign in</h3>
+            </div>
+            <div class="modal-body">
+                <div class="container">Email</div>
+                <div class="input-lg"> {{input value=name}}</div>
+                <div class="container">Password</div>
+                <div class="input-lg">{{input value=password}}</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 {{outlet}}
