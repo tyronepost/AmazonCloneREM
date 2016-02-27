@@ -14,7 +14,7 @@
                            aria-expanded="false">Shop by Department <span class="caret"></span></a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                           {{#each model as |category|}}
-                              <li><a href="#">{{category}}</a></li>
+                              <li><a href="#">{{category.name}}</a></li>
                           {{/each}}
                         </ul>
                     </li>
