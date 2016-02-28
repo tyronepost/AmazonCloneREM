@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('index', {path: '/'} ,function() {
     this.route('books');
     this.route('deals');
+    this.route('giftcards');
   });
 });
 
