@@ -5,19 +5,26 @@ module.exports = function(app) {
 
   var categories = [
     { id: 1,
-      name: 'Books'},
+      name: 'Books',
+      link: 'books'},
     { id: 2,
-      name: 'Movies'},
+      name: 'Movies',
+      link: 'books'},
     { id: 3,
-      name: 'Video Games'},
+      name: 'Video Games',
+      link: 'books'},
     { id: 4,
-      name: 'Electronics'},
+      name: 'Electronics',
+      link: 'books'},
     { id: 5,
-      name: 'Clothing'},
+      name: 'Clothing',
+      link: 'books'},
     { id: 6,
-      name: 'Sports'},
+      name: 'Sports',
+      link: 'books'},
     { id: 7,
-      name: 'Health'} ];
+      name: 'Health',
+      link: 'books'} ];
 
   categoriesRouter.get('/', function(req, res) {
     res.send({
