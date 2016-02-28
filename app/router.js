@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('books');
     this.route('deals');
     this.route('giftcards');
+    this.route('sell');
   });
 });
 
