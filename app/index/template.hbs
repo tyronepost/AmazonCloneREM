@@ -1,10 +1,18 @@
 <div class="container">
-    <h2 id="title"><span class="text-nowrap">Welcome to Webstore</span></h2>
+
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-
+              <div class="row">
+                <div class="col-md-3">
+                  <h4 id="title"><span class="text-nowrap">Welcome to Webstore</span></h4>
+                </div>
+                <div class="input-group col-md-6">
+                  <span class="input-group-addon" id="basic-addon1">@</span>
+                  {{input type="text" class="form-control" value=searchString placeholder="Search for solutions..."}}
+                </div>
+              </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
