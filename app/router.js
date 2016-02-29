@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('deals');
     this.route('giftcards');
     this.route('sell');
+    this.route('help');
   });
 });
 
