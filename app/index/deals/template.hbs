@@ -9,19 +9,37 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="assets/images/xboxone.png" alt="xbox one">
-                <div class="carousel-caption">
-                    ...
+          {{#each model as |deal|}}
+            {{#if deal.active}}
+                <div class="item active">
+                    <img src={{deal.image}} alt="playstation4">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="assets/images/playstation4.png" alt="playstation 4">
-                <div class="carousel-caption">
-                    ...
+            {{else}}
+                <div class="item">
+                    <img src={{deal.image}} alt="playstation4">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
                 </div>
-            </div>
-            ...
+            {{/if}}
+
+          {{/each}}
+            <!--<div class="item active">-->
+                <!--<img src="assets/images/xboxone.png" alt="xbox one">-->
+                <!--<div class="carousel-caption">-->
+                    <!--...-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<img src="assets/images/playstation4.png" alt="playstation 4">-->
+                <!--<div class="carousel-caption">-->
+                    <!--...-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--...-->
         </div>
 
         <!-- Controls -->
