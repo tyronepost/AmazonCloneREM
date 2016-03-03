@@ -1,9 +1,9 @@
 import Ember from 'ember';
 
 var deals = [
-  { image: 'assets/images/xboxone.png', active: true },
-  { image: 'assets/images/playstation4.png', active: false },
-  { image: 'assets/images/wiiu.jpg', active: false }
+  { name: 'Xbox One', image: 'assets/images/xboxone.png', active: true },
+  { name: 'Playstation 4', image: 'assets/images/playstation4.png', active: false },
+  { name: 'Wii U', image: 'assets/images/wiiu.jpg', active: false }
 ];
 
 export default Ember.Route.extend({
