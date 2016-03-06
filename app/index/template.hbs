@@ -1,18 +1,17 @@
 <div class="container">
-
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-              <div class="row">
-                <div class="col-md-3">
-                  <a href="/"><h4 id="title"><span class="text-nowrap">Welcome to Webstore</span></h4></a>
+                <div class="row">
+                    <div class="col-md-3">
+                      {{#link-to 'index.featured'}}<h4 id="title"><span class="text-nowrap">Welcome to Webstore</span>
+                      </h4>{{/link-to}}
+                    </div>
+                    <div class="input-group col-md-6">
+                        <span class="input-group-addon" id="basic-addon1">@</span>
+                      {{input type="text" class="form-control" value=searchString placeholder="Search for solutions..."}}
+                    </div>
                 </div>
-                <div class="input-group col-md-6">
-                  <span class="input-group-addon" id="basic-addon1">@</span>
-                  {{input type="text" class="form-control" value=searchString placeholder="Search for solutions..."}}
-                </div>
-              </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
