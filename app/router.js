@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('help');
     this.route('featured');
   });
+  this.route('item');
 });
 
 export default Router;
